@@ -1,9 +1,11 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.editor.harpoon2",
+    "lazyvim.plugins.extras.lang.clangd",
+    "lazyvim.plugins.extras.lang.cmake"
   ],
   "news": {
-    "NEWS.md": "4578",
+    "NEWS.md": "4885",
     "doc/news.txt": "13995"
   },
   "version": 3

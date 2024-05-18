@@ -13,7 +13,7 @@ vim.opt.list = false
 vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
-vim.opt.colorcolumn = "100" --- colorcolumn (disable to remove colorcolumn)
+vim.opt.colorcolumn = "75" --- colorcolumn (disable to remove colorcolumn)
 vim.opt.number = true
 vim.opt.termguicolors = true
 vim.opt.title = true
@@ -46,3 +46,7 @@ vim.opt.showmode = true -- need to vim.opt it true to show commands in status li
 vim.opt.formatoptions:append({ "r" })
 --vim.opt.statusline = [[%<%f %h%m%r %y%=%{v:register} %-14.(%l,%c%V%) %P]] -- for the status line
 --vim.o.statusline = "[%<%.20f][%{&fenc==''?&enc:&fenc}]%y%m%r%h%=%([Line: %l Column: %c %P]%)"
+-- vim.g.netrw_browse_split = 0
+-- vim.g.netrw_banner = 0
+-- vim.g.netrw_winsize = 25
+--vim.o.signcolumn = "no" -- For git showing blue line

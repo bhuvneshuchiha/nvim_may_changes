@@ -22,8 +22,6 @@ require("lazy").setup({
       dependencies = { "nvim-lua/plenary.nvim" },
     },
     { "mfussenegger/nvim-jdtls" },
-    { "echasnovski/mini.nvim", version = false },
-    { "echasnovski/mini.comment" },
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },

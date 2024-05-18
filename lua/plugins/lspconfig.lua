@@ -147,6 +147,12 @@ return {
           },
         })
       end,
+      -- {
+      --   "nvim-lspconfig",
+      --   opts = {
+      --     inlay_hints = { enabled = true },
+      --   },
+      -- },
     })
   end,
 }
