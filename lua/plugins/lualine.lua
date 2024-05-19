@@ -64,11 +64,12 @@ return {
             cond = lazy_status.has_updates,
             color = { fg = "#ff9e64" },
           },
-          {
-            require("noice").api.status.command.get,
-            cond = require("noice").api.status.command.has,
-            color = { fg = "#ff9e64" },
-          },
+          -- {
+          -- uncomment below 3 lines to use noice
+          --   require("noice").api.status.command.get,
+          --   cond = require("noice").api.status.command.has,
+          --   color = { fg = "#ff9e64" },
+          -- },
           -- { "encoding" },
           -- { "fileformat" },
           -- { "filetype" },
@@ -102,9 +103,9 @@ return {
       },
     })
     -- delete lualine_c if you want to go to back to original lualine
-    -- require("lualine").hide({
-    --   place = { "statusline", "tabline", "winbar" }, -- The segment this change applies to.
-    --   unhide = true, -- whether to re-enable lualine again/ enable cmd to cmd_popup in noice to get cmd terminal.
-    -- })
+    require("lualine").hide({
+      place = { "statusline", "tabline", "winbar" }, -- The segment this change applies to.
+      unhide = true, -- whether to re-enable lualine again/ enable cmd to cmd_popup in noice to get cmd terminal.
+    })
   end,
 }

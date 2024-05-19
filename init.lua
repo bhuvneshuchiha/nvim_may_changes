@@ -25,8 +25,8 @@ vim.opt.showcmd = true -- vim.opt this to true for status line
 vim.opt.cmdheight = 1 -- vim.opt to 1 if you want to see primagen like status line, plus comment out
 --some code in noice, lua and nvim-notify.
 vim.opt.laststatus = 2 -- vim.opt this to 1 as well for status line.
-vim.o.statusline = "%F"
-vim.wo.statusline = "%F"
+-- vim.o.statusline = "%F"
+-- vim.wo.statusline = "%F"
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.inccommand = "split"
@@ -44,9 +44,9 @@ vim.opt.mouse = ""
 vim.opt.showmode = true -- need to vim.opt it true to show commands in status line like prime.
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
---vim.opt.statusline = [[%<%f %h%m%r %y%=%{v:register} %-14.(%l,%c%V%) %P]] -- for the status line
---vim.o.statusline = "[%<%.20f][%{&fenc==''?&enc:&fenc}]%y%m%r%h%=%([Line: %l Column: %c %P]%)"
+vim.opt.statusline = [[%<%F %h%m%r %y %=%{v:register} %-14.(%l,%c%V%) %p%%]] -- for the status line
 -- vim.g.netrw_browse_split = 0
 -- vim.g.netrw_banner = 0
--- vim.g.netrw_winsize = 25
+-- vim.g.netrw_winsize = 100 -- Make size 25 to netrw take less space.
 --vim.o.signcolumn = "no" -- For git showing blue line
+--vim.api.nvim_set_keymap("n", "<leader>e", ":Lexplore<CR>", { noremap = true, silent = true }) --netrw binding.
